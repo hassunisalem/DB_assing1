@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS Vets CASCADE;
 DROP TABLE IF EXISTS Pets CASCADE;
 DROP TABLE IF EXISTS Pets_Caretakers CASCADE;
 DROP TABLE IF EXISTS Addresses;
+DROP TYPE IF EXISTS dtype;
 
 
 CREATE TABLE Cities (
@@ -31,11 +32,11 @@ CREATE TABLE Vets (
     address_id int REFERENCES Addresses
 );
 
--- CREATE TYPE dtype AS ENUM (
-   -- 'cat',
-   -- 'dog',
-  --  'other'
---    );
+CREATE TYPE dtype AS ENUM (
+    'cat',
+    'dog',
+    'other'
+   );
 
 CREATE TABLE Pets (
    species dtype,
