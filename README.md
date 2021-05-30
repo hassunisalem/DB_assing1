@@ -19,4 +19,4 @@ and because of lack of time, i choose to focus on the new materials such as *vie
 also, when adding other *species* than *cat* or *dog* to the single table, i'd implement that exat species in the enum type *Dtype*, but went with *other* 
 to save time.
 
-The java aplication should also make use of the written procedures to add new pets, through some simple methods in the **program.java** file
+The java aplication should also make use of the written procedures to add new pets, through some JPA extractions or just some simple methods with premade SQL statements in the **program.java** file
